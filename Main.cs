@@ -52,11 +52,6 @@ namespace custom_panorama
             GetPath paths = new GetPath();
             CheckForFfmpeg();
 
-            if (Directory.Exists(paths.panorama_path))
-            {
-                MessageBox.Show("true");
-            }
-
             foreach (string i in paths.full)
             {
                 PathBox.Items.Add(i.Split('\\')[i.Split('\\').Length - 1].Remove(i.Split('\\')[i.Split('\\').Length - 1].Length - 5));
