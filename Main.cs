@@ -60,10 +60,6 @@ namespace custom_panorama
             foreach (string i in paths.full)
             {
                 PathBox.Items.Add(i.Split('\\')[i.Split('\\').Length - 1].Remove(i.Split('\\')[i.Split('\\').Length - 1].Length - 5));
-                //if (!i.Split('\\')[i.Split('\\').Length - 1].Contains("540") && !i.Split('\\')[i.Split('\\').Length - 1].Contains("720"))
-                //{
-                //    MessageBox.Show(i.Split('\\')[i.Split('\\').Length - 1].Remove(i.Split('\\')[i.Split('\\').Length - 1].Length - 5));
-                // }
             }
         }
 
