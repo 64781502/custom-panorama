@@ -47,10 +47,20 @@ namespace custom_panorama
             }
         }
 
+        private void CheckForSteamPath()
+        {
+            GetPath paths = new GetPath();
+            if (!Directory.Exists(paths.panorama_path))
+            {
+                MessageBox.Show("Steam not found?", "CS:GO Custom Panorama", MessageBoxButtons.OK, MessageBoxIcon.Error); Application.Exit();
+            }
+        }
+
         private void Main_Load(object sender, EventArgs e)
         {
             GetPath paths = new GetPath();
             CheckForFfmpeg();
+            CheckForSteamPath();
 
             foreach (string i in paths.full)
             {
