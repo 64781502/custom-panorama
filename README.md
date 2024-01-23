@@ -1,4 +1,5 @@
 # custom-panorama
+### (1/23) doesnt work in cs2 anymore xdddDXXDXDDD😭🙏
 ### lets you pick your own panorama in csgo
 - requires ffmpeg (download [here](https://ffmpeg.org/download.html))
 
